@@ -179,22 +179,24 @@
       <section class="basket-add">
         <h2 class="basket-add__title">Добавить в корзину</h2>
         <!--не понял какие инпуты нужны, позже поправлю как ответят авторы-->
-        <fieldset class="basket-add__choice choice">
-          <legend class="choice__list">Выберите размер:</legend>
-          <label class="control control-radio">S
-            <input class="visually-hidden control-input" type="radio" name="product-group" value="S" checked>
-            <span class="control-mark radio-checker"></span>
-          </label>
-          <label class="control control-radio">M
-            <input class="visually-hidden control-input" type="radio" name="product-group" value="M">
-            <span class="control-mark radio-checker"></span>
-          </label>
-          <label class="control control-radio">L
-            <input class="visually-hidden control-input" type="radio" name="product-group" value="L">
-            <span class="control-mark radio-checker"></span>
-          </label>
-          <button class="choice__button">Добавить</button>
-        </fieldset>
+        <form class="basket-add__form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="basket-add__choice choice">
+            <legend class="choice__list">Выберите размер:</legend>
+            <label class="control control-radio">S
+              <input class="visually-hidden control-input" type="radio" name="product-size" value="S" checked>
+              <span class="control-mark radio-checker"></span>
+            </label>
+            <label class="control control-radio">M
+              <input class="visually-hidden control-input" type="radio" name="product-size" value="M">
+              <span class="control-mark radio-checker"></span>
+            </label>
+            <label class="control control-radio">L
+              <input class="visually-hidden control-input" type="radio" name="product-size" value="L">
+              <span class="control-mark radio-checker"></span>
+            </label>
+            <button class="choice__button">Добавить</button>
+          </fieldset>
+        </form>
       </section>
     </div>
   </div>
