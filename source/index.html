@@ -8,8 +8,8 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img src="" width="86" height="29" alt="Логотип магазина, Мишка.">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/86/29/" width="86" height="29" alt="Логотип магазина, Мишка.">
     </a>
     <nav class="navigation">
       <button class="navigation__toggle" type="button">
@@ -23,6 +23,12 @@
           <li class="site-list__item">
             <a href="form.html" class="site-list__link">Вязание на заказ</a>
           </li>
+          <li class="site-list__item main-menu">
+            <a href="" class="main-menu__link">Новые поступления</a>
+          </li>
+          <li class="site-list__item main-menu">
+            <a href="" class="main-menu__link">Распродажа</a>
+          </li>
         </ul>
         <ul class="navigation__list user-list">
           <li class="user-list__item">
@@ -30,14 +36,6 @@
           </li>
           <li class="user-list__item">
             <a href="" class="user-list__link">Корзина: <span class="basket">пока пуста</span></a>
-          </li>
-        </ul>
-        <ul class="navigation-list submenu-list">
-          <li class="submenu-list__item">
-            <a href="" class="submenu-list__link">Новые поступления</a>
-          </li>
-          <li class="submenu-list__item">
-            <a href="" class="submenu-list__link">Распродажа</a>
           </li>
         </ul>
         <p class="navigation__legend">Бесплатная доставка по России</p>
@@ -48,14 +46,14 @@
     <h1 class="visually-hidden">Интернет магазин, вязанных вещей</h1>
     <section class="promo">
       <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
-      <ul class="promo__list">
-        <li class="promo__item">
-          <a href="" class="promo__link">Предметы интерьера</a>
-        </li>
-        <li class="promo__item">
-          <a href="" class="promo__link">Предметы интерьера</a>
-        </li>
-      </ul>
+      <div class="promo__goods link-goods">
+        <div class="link-goods__item">
+          <a href="#" class="link-goods__link link-goods__link--interior">Предметы интерьера</a>
+        </div>
+        <div class="link-goods__item">
+          <a href="#" class="link-goods__link link-goods__link--toys">Предметы интерьера</a>
+        </div>
+      </div>
     </section>
     <section class="featured">
       <h2 class="visually-hidden">Популярный товар недели</h2>
@@ -66,64 +64,99 @@
           размерах.</p>
         <table class="product__specification specification">
           <tr class="specification__item">
-            <td>Цвет</td>
+            <th>Цвет</th>
             <td>«Тиффани»/серый</td>
           </tr>
           <tr class="specification__item">
-            <td>Диаметр</td>
+            <th>Диаметр</th>
             <td>25 см</td>
           </tr>
           <tr class="specification__item">
-            <td>Высота</td>
+            <th>Высота</th>
             <td>15 см</td>
           </tr>
         </table>
-        <img src="" alt="Двухцветные вязаные корзинки." class="product__image">
+        <img src="https://via.placeholder.com/260/315/" alt="Двухцветные вязаные корзинки." width="260" height="315"
+          class="product__image">
         <p class="product__text">Цена: <span class="product__price">990 руб.</span></p>
         <button class="button product__button" type="button">Заказать</button>
       </div>
     </section>
-    <section class="advanteges">
-      <h2 class="advanteges__title">Коротко о нас:</h2>
-      <ul class="advanteges__list">
-        <li class="advanteges__item">
-          <p class="advanteges__text">Экологически чистые материалы</p>
+    <section class="advantages">
+      <h2 class="advantages__title">Коротко о нас:</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--ecological">
+          <p class="advantages__text">Экологически чистые материалы</p>
         </li>
-        <li class="advanteges__item">
-          <p class="advanteges__text">Скандинавский стиль по российской цене</p>
+        <li class="advantages__item advantages__item--style">
+          <p class="advantages__text">Скандинавский стиль по российской цене</p>
         </li>
-        <li class="advanteges__item">
-          <p class="advanteges__text">Увеличивает лайкина фотографиях</p>
+        <li class="advantages__item advantages__item--up-like">
+          <p class="advantages__text">Увеличивает лайкина фотографиях</p>
         </li>
-        <li class="advanteges__item">
-          <p class="advanteges__text">Связано вручную с любовью и умилением</p>
+        <li class="advantages__item advantages__item--manual-whork">
+          <p class="advantages__text">Связано вручную с любовью и умилением</p>
         </li>
-        <li class="advanteges__item">
-          <p class="advanteges__text">Поддержка отечественного производителя</p>
+        <li class="advantages__item advantages__item--self">
+          <p class="advantages__text">Поддержка отечественного производителя</p>
         </li>
-        <li class="advanteges__item">
-          <p class="advanteges__text">Поставляется в подарочной упаковке</p>
+        <li class="advantages__item advantages__item--present">
+          <p class="advantages__text">Поставляется в подарочной упаковке</p>
         </li>
       </ul>
     </section>
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
-      <div class="reviews__list slider-list">
-        <blockquote class="reviews__item">
-          <div class="reviews__author-info">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-              лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-              фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author-name"><b>Анастасия Красильникова</b></cite>
-            <address>@misssssiskras</address>
-          </div>
-        </blockquote>
-        <button class="reviews__prev" type="button">
-          <span class="visually-hidden">Предыдущий отзыв</span>
-        </button>
-        <button class="reviews__next" type="button">
-          <span class="visually-hidden">Следующий отзыв</span>
-        </button>
+      <div class="reviews__list slider">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <blockquote class="slider__quote quote">
+              <div class="quote__author-info">
+                <p class="quote__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                  лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                  фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="quote__author-name">Анастасия Красильникова</cite>
+                <address>@misssssiskras</address>
+              </div>
+            </blockquote>
+          </li>
+          <li class="slider__item">
+            <blockquote class="slider__quote quote">
+              <div class="quote__author-info">
+                <p class="quote__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                  architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                  non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <cite class="quote__author-name">Татьяна Шапошникова</cite>
+                <address>@lorryipsum</address>
+              </div>
+            </blockquote>
+          </li>
+          <li class="slider__item">
+            <blockquote class="slider__quote quote">
+              <div class="quote__author-info">
+                <p class="quote__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                  architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                  non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <cite class="quote__author-name">Светлана Кольцова</cite>
+                <address>@lorrrrrrryipsum</address>
+              </div>
+            </blockquote>
+          </li>
+        </ul>
+        <div class="reviews__button button-slide">
+          <button class="button-slide__prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="button-slide__next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </div>
         <a href="#" class="reviews__button">Написать</a>
       </div>
     </section>
@@ -136,17 +169,15 @@
         </li>
         <li class="contacts__item address">
           <span class="address__title">адрес: </span>
-          <p class="address__subtitle">Санкт-Петербургул. Большая
-            Конюшеннаяд.
-            19/8, офис 101</p>
+          <p class="address__subtitle">Санкт-Петербургул. Большая Конюшенная, д. 19/8, офис 101</p>
         </li>
       </ul>
       <div class="contacts__map"></div>
-      <a class="contacts__button" href="#"></a>
+      <a class="contacts__button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
-    <img class="page-footer__logo" src="" alt="Логотип интернет магазина, Мишка.">
+    <img class="page-footer__logo" src="https://via.placeholder.com/102/35/" alt="Логотип интернет магазина, Мишка.">
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -168,7 +199,8 @@
     </div>
     <span class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
-      <img class="copyright__image" src="" width="86" height="29" alt="Логотип компании htmlacademy.">
+      <a href="https://htmlacademy.ru/" class="copyright__link"><img class="copyright__image"
+          src="https://via.placeholder.com/27/34/" width="86" height="29" alt="Логотип компании htmlacademy."></a>
     </span>
   </footer>
   <div class="modal">
@@ -182,20 +214,17 @@
         <form class="basket-add__form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="basket-add__choice choice">
             <legend class="choice__list">Выберите размер:</legend>
-            <label class="control control-radio">S
+            <label class="control">S
               <input class="visually-hidden control-input" type="radio" name="product-size" value="S" checked>
-              <span class="control-mark radio-checker"></span>
             </label>
-            <label class="control control-radio">M
+            <label class="control">M
               <input class="visually-hidden control-input" type="radio" name="product-size" value="M">
-              <span class="control-mark radio-checker"></span>
             </label>
-            <label class="control control-radio">L
+            <label class="control">L
               <input class="visually-hidden control-input" type="radio" name="product-size" value="L">
-              <span class="control-mark radio-checker"></span>
             </label>
           </fieldset>
-          <button class="choice__button">Добавить</button>
+          <button class="basket-add__button" type="button">Добавить</button>
         </form>
       </section>
     </div>
