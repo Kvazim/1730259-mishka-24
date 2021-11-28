@@ -50,12 +50,12 @@
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item card">
-            <a href="#" class="cerd__image-link">
+            <a href="#" class="card__image-link">
               <img src="https://via.placeholder.com/260/195/" alt="Вязанный зайчик." width="260" height="195">
             </a>
-            <div class="card__info">
-              <a href="#" class="card__title--link">
-                <h3 class="card__title">Зайчик-попрыгайчик</h3>
+            <div class="card__info information">
+              <a href="#" class="information__link">
+                <h3 class="information__title">Зайчик-попрыгайчик</h3>
               </a>
               <span class="card__description">Рост 30 см, вес 200 г</span>
               <div class="card__buy">
@@ -67,12 +67,12 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a href="#" class="cerd__image-link">
+            <a href="#" class="card__image-link">
               <img src="https://via.placeholder.com/260/195/" alt="Вязанная корзина." width="260" height="195">
             </a>
-            <div class="card__info">
-              <a href="#" class="card__title--link">
-                <h3 class="card__title">Корзинка для белья</h3>
+            <div class="card__info information">
+              <a href="#" class="information__link">
+                <h3 class="information__title">Корзинка для белья</h3>
               </a>
               <span class="card__description">Диаметр 15 см, высота 10 см</span>
               <div class="card__buy">
@@ -84,12 +84,12 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a href="#" class="cerd__image-link">
+            <a href="#" class="card__image-link">
               <img src="https://via.placeholder.com/260/195/" alt="Большая вязанная корзина." width="260" height="195">
             </a>
-            <div class="card__info">
-              <a href="#" class="card__title--link">
-                <h3 class="card__title">Большая корзинка для игрушек</h3>
+            <div class="card__info information">
+              <a href="#" class="information__link">
+                <h3 class="information__title">Большая корзинка для игрушек</h3>
               </a>
               <span class="card__description">Диаметр 30 см, высота 30 см</span>
               <div class="card__buy">
@@ -104,9 +104,14 @@
       </section>
       <section class="production">
         <h2 class="production__title">Процесс производства</h2>
-        <div class="production__video">
-          <img src="https://via.placeholder.com/260/150/" alt="Видео с процессом производства">
-          <button class="production__play" type="button"></button>
+        <div class="production__video video">
+          <a href="#" class="video__link">
+            <picture>
+              <source srcset="https://via.placeholder.com/260/150.webp" type="image/webp">
+              <img class="video__media" src="https://via.placeholder.com/260/150/" alt="Процесс производства.">
+            </picture>
+          </a>
+          <button class="production__play" type="button" aria-label="Запустить видео"></button>
         </div>
         <div class="production-subtitle">
           <p class="production-subtitle__description">
