@@ -12,11 +12,12 @@
     <a class="page-header__logo">
       <img src="https://via.placeholder.com/86/35/" width="86" height="35" alt="Логотип магазина, Мишка.">
     </a>
-    <nav class="navigation">
+    <!--для открытия убрать класс navigation--closed-->
+    <nav class="navigation navigation--closed">
+      <!--В активном состоянии добавить клас toggle--activ-->
       <button class="navigation__toggle toggle toggle--activ" type="button" aria-label="Открыть/скрыть меню.">
         <span class="toggle__bar"></span>
       </button>
-      <!--добавить класс navigation__wrapper--open-->
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
@@ -47,13 +48,13 @@
   <main class="page-main">
     <h1 class="visually-hidden">Интернет магазин, вязанных вещей</h1>
     <section class="promo">
-      <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
+      <h2 class="promo__title">Милые штуки ручной<br> работы для дома</h2>
       <div class="promo__goods link-goods">
-        <div class="link-goods__item">
-          <a href="#" class="link-goods__link link-goods__link--interior">Предметы интерьера</a>
+        <div class="link-goods__item link-goods__item--green">
+          <a href="#" class="link-goods__link link-goods__link--interior">Предметы<br> интерьера</a>
         </div>
-        <div class="link-goods__item">
-          <a href="#" class="link-goods__link link-goods__link--toys">Детские игрушки</a>
+        <div class="link-goods__item link-goods__item--darck-green">
+          <a href="#" class="link-goods__link link-goods__link--toys">Детские<br> игрушки</a>
         </div>
       </div>
     </section>
