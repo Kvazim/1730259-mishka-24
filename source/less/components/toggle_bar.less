@@ -1,0 +1,32 @@
+.toggle__bar {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle__bar::before,
+.toggle__bar::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.toggle__bar,
+.toggle__bar::before,
+.toggle__bar::after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background-color: @color-toggle;
+}
+
+.toggle__bar::before {
+  top: 6px;
+}
+
+.toggle__bar::after {
+  bottom: 6px;
+}
+
+.toggle--activ
