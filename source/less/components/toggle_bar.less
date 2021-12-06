@@ -29,3 +29,18 @@
 .toggle__bar::after {
   bottom: 6px;
 }
+
+.toggle--activ .toggle__bar::after {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.toggle--activ .toggle__bar::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.toggle--activ .toggle__bar {
+  width: 27px;
+  background-color: transparent;
+}
