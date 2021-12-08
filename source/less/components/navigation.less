@@ -1,3 +1,12 @@
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  background-color: @color-wite;
+  z-index: 1;
+  position: relative;
+  top: 80px;
+}
+
 .navigation--closed .navigation__list {
   display: none;
 }
@@ -6,6 +15,13 @@
   display: block;
 }
 
-.navigation .navigation__legend {
+.navigation__legend {
   display: none;
+}
+
+.navigation__toggle {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }

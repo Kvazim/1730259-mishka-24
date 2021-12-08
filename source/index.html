@@ -63,8 +63,8 @@
     </section>
     <section class="featured  zigzag">
       <h2 class="visually-hidden">Популярный товар недели</h2>
-      <div class="product featured__product">
-        <div class="product__text-wrapper">
+      <div class="featured__product product">
+        <div class="product-text-wrapper">
           <h3 class="product__title">Вязаные корзинки</h3>
           <p class="product__subtitle">Товар недели</p>
           <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
@@ -84,10 +84,10 @@
             </tr>
           </table>
         </div>
-        <div class="product__image-wrapper">
+        <div class="product-image-wrapper">
           <img class="product__image" src="https://via.placeholder.com/260/315.jpg" alt="Двухцветные вязаные корзинки." width="260" height="315">
         </div>
-          <div class="product__buy-wrapper">
+          <div class="product-buy-wrapper">
           <p class="product__text">Цена: <span class="product__price">990 руб.</span></p>
           <button class="button product__button" type="button">Заказать</button>
         </div>
@@ -130,8 +130,8 @@
                 <p class="quote__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
                   лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
                   фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <cite class="quote__author-name">Анастасия Красильникова</cite>
-                <address>@misssssiskras</address>
+                <cite class="quote__author--name">Анастасия Красильникова</cite>
+                <address class="quote__author--address">@misssssiskras</address>
               </div>
             </blockquote>
           </li>
@@ -143,7 +143,7 @@
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                   больше лайков!</p>
                 <cite class="quote__author-name">Екатерина Красильникова</cite>
-                <address>@misssssiskras2</address>
+                <address class="quote__author--address">@misssssiskras2</address>
               </div>
             </blockquote>
           </li>
@@ -155,12 +155,12 @@
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                   больше лайков!</p>
                 <cite class="quote__author-name">Елена Красильникова</cite>
-                <address>@misssssiskras3</address>
+                <address class="quote__author--address">@misssssiskras3</address>
               </div>
             </blockquote>
           </li>
         </ul>
-        <div class="reviews__button button-slide">
+        <div class="reviews__slider button-slide">
           <button class="button-slide__switch button-slide__switch--prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
@@ -168,7 +168,7 @@
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
-        <a href="#" class="button button-reviews">Написать</a>
+        <a href="#" class="button reviews__button">Написать</a>
       </div>
     </div>
     </section>
@@ -190,7 +190,7 @@
         </li>
       </ul>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map map"></div>
       <div class="contacts-wrapper">
       <a class="button contacts__button" href="#">Напишите нам</a>
     </div>
@@ -228,22 +228,20 @@
   <!--для открытия модала убрать класс modal--close-->
   <div class="modal modal--close">
     <div class="modal-container">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+      <button class="modal-close-button visually-hidden" aria-label="Закрыть окно"></button>
       <section class="basket-add">
         <h2 class="basket-add__title">Добавить в корзину</h2>
         <!--не понял какие инпуты нужны, позже поправлю как ответят авторы-->
         <form class="basket-add__form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="basket-add__choice choice">
-            <legend class="choice__list">Выберите размер:</legend>
-            <label class="control">S
-              <input class="visually-hidden control-input" type="radio" name="product-size" value="S" checked>
+            <legend class="choice__title">Выберите размер:</legend>
+            <label class="controls">S
+              <input class="visually-hidden control-input" type="radio" name="produsct-size" value="S" checked>
             </label>
-            <label class="control">M
+            <label class="controls">M
               <input class="visually-hidden control-input" type="radio" name="product-size" value="M">
             </label>
-            <label class="control">L
+            <label class="controls">L
               <input class="visually-hidden control-input" type="radio" name="product-size" value="L">
             </label>
           </fieldset>
