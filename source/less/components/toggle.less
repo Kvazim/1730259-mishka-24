@@ -4,6 +4,7 @@
   height: 21px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .toggle__bar {
@@ -11,7 +12,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
 }
 
 .toggle__bar::before,
@@ -28,6 +28,7 @@
   height: 2px;
   left: 0;
   background-color: @color-toggle;
+  transition: transform 0.3s linear;
 }
 
 .toggle__bar::before {
@@ -40,15 +41,18 @@
 
 .toggle--activ .toggle__bar::after {
   top: 50%;
-  transform: rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transition: transform 0.3s linear;
 }
 
 .toggle--activ .toggle__bar::before {
   top: 50%;
-  transform: rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.3s linear;
 }
 
 .toggle--activ .toggle__bar {
   width: 27px;
   background-color: transparent;
+  transition: transform 0.3s linear;
 }
