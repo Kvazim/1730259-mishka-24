@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -12,9 +14,10 @@
       <img src="https://via.placeholder.com/86/29/" width="86" height="29"
         alt="Логотип магазина, Мишка, переход на главную страницу.">
     </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+    <nav class="navigation navigation--closed">
+      <!--В активном состоянии добавить клас toggle--activ-->
+      <button class="navigation__toggle toggle toggle--activ" type="button" aria-label="Открыть/скрыть меню.">
+        <span class="toggle__bar"></span>
       </button>
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
@@ -45,13 +48,13 @@
   </header>
   <main class="page-main">
     <h1 class="page__title">Каталог товаров</h1>
-    <div class="container">
+    <div class="container container--catalog">
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item card">
-            <a href="#" class="card__image-link">
-              <img src="https://via.placeholder.com/260/195/" alt="Вязанный зайчик." width="260" height="195">
+            <a href="#" class="card__link">
+              <img class="card__image" src="https://via.placeholder.com/260/195.jpeg" alt="Вязанный зайчик.">
             </a>
             <div class="card__info information">
               <a href="#" class="information__link">
@@ -67,8 +70,8 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a href="#" class="card__image-link">
-              <img src="https://via.placeholder.com/260/195/" alt="Вязанная корзина." width="260" height="195">
+            <a href="#" class="card__link">
+              <img class="card__image" src="https://via.placeholder.com/260/195.jpeg" alt="Вязанная корзина.">
             </a>
             <div class="card__info information">
               <a href="#" class="information__link">
@@ -84,8 +87,8 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a href="#" class="card__image-link">
-              <img src="https://via.placeholder.com/260/195/" alt="Большая вязанная корзина." width="260" height="195">
+            <a href="#" class="card__link">
+              <img class="card__image" src="https://via.placeholder.com/260/195.jpeg" alt="Большая вязанная корзина.">
             </a>
             <div class="card__info information">
               <a href="#" class="information__link">
@@ -111,13 +114,13 @@
               <img class="video__media" src="https://via.placeholder.com/260/150/" alt="Процесс производства.">
             </picture>
           </a>
-          <button class="production__play" type="button" aria-label="Запустить видео"></button>
+          <button class="video__play" type="button" aria-label="Запустить видео"></button>
         </div>
         <div class="production-subtitle">
           <p class="production-subtitle__description">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <a href="#" class="button production-button">Сделать заказ</a>
+          <a href="#" class="button production__button">Сделать заказ</a>
         </div>
       </section>
     </div>
@@ -149,7 +152,7 @@
           src="https://via.placeholder.com/27/34/" width="86" height="29" alt="Логотип компании htmlacademy."></a>
     </span>
   </footer>
-  <div class="modal">
+  <div class="modal modal--close">
     <div class="modal-container">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -170,11 +173,12 @@
               <input class="visually-hidden control-input" type="radio" name="product-size" value="L">
             </label>
           </fieldset>
-          <button class="basket-add__button" type="button">Добавить</button>
+          <button class="basket-add__button" type="submit">Добавить</button>
         </form>
       </section>
     </div>
   </div>
+  <script src="./js/burger.js"></script>
 </body>
 
 </html>
