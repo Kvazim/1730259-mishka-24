@@ -5,4 +5,3 @@ burger.addEventListener('click', function(event) {
   nav.classList.toggle('navigation--close');
 });
 nav.classList.remove('navigation--nojs--nojs');
-
