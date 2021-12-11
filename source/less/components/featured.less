@@ -1,5 +1,23 @@
+.featured {
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
 .featured__product {
   min-width: 320px;
-  padding: 31px 30px 36px;
+  padding-left: 30px;
+  padding-right: 30px;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .featured {
+    padding-top: 40px;
+    padding-bottom: 52px;
+  }
+
+  .featured__product {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

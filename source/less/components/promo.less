@@ -1,5 +1,9 @@
 .promo {
   background-color: @color-light-grey;
+  background-image: url("../img/hero-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: auto auto;
 }
 
 .promo__title {
@@ -9,4 +13,16 @@
   line-height: 30px;
   text-align: center;
   color: @color-black;
+}
+
+.promo__goods {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__goods {
+    flex-direction: row;
+  }
 }

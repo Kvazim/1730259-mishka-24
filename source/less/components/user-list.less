@@ -15,3 +15,15 @@
   color: @color-black;
   text-decoration: none;
 }
+
+@media (min-width: @mobile-width-only) {
+  .user-list__item {
+    box-shadow: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    order: 1;
+  }
+}
