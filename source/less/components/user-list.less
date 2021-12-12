@@ -24,6 +24,19 @@
 
 @media (min-width: @tablet-width) {
   .user-list {
+    margin-left: auto;
     order: 1;
+  }
+
+  .user-list__link--search {
+    width: 82px;
+    height: 100%;
+    padding: 0;
+    border-left: 1px solid @color-light-grey;
+    border-right: 1px solid @color-light-grey;
+  }
+
+  .user-list__link--text {
+    display: none;
   }
 }
