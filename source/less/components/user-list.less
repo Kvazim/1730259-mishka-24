@@ -24,16 +24,23 @@
 
 @media (min-width: @tablet-width) {
   .user-list {
-    margin-left: auto;
-    order: 1;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: end;
+  }
+
+  .user-list__link {
+    padding: 32px 0 32px 48px;
+  }
+
+  .user-list__item--search {
+    border-left: 1px solid fade(@color-black, 10%);
+    border-right: 1px solid fade(@color-black, 10%);
   }
 
   .user-list__link--search {
-    width: 82px;
-    height: 100%;
-    padding: 0;
-    border-left: 1px solid @color-light-grey;
-    border-right: 1px solid @color-light-grey;
+    margin-right: 32px;
+    padding: 36px 31px 34px 33px;
   }
 
   .user-list__link--text {
