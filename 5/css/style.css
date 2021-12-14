@@ -599,6 +599,11 @@
     margin-bottom: 0;
   }
 }
+@media (min-width: 1150px) {
+  .product-buy-wrapper {
+    padding-left: 180px;
+  }
+}
 .advantages-wrapper {
   min-width: 320px;
   padding-left: 30px;
