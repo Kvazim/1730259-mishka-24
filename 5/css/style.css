@@ -438,7 +438,7 @@
 @media (min-width: 1150px) {
   .product-text-wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 .product__top {
@@ -530,7 +530,6 @@
     flex-direction: row-reverse;
     grid-column: 1/-1;
     grid-row: 1/2;
-    margin-bottom: 35px;
     padding-top: 61px;
     z-index: 5;
   }
@@ -541,14 +540,16 @@
     line-height: 17px;
   }
   .product__bottom {
-    grid-column: 1/-1;
-    grid-row: 1/2;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 2/-1;
+    grid-row: 1/-1;
     column-gap: 58px;
     row-gap: 109px;
   }
   .product__middle {
+    grid-column: 1/3;
+    grid-row: 1/2;
     padding-top: 153px;
-    padding-left: 180px;
   }
   .product__image {
     width: 100%;
@@ -582,8 +583,8 @@
 }
 @media (min-width: 1150px) {
   .product-image-wrapper {
-    height: 636px;
-    object-fit: contain;
+    grid-column: 3/-1;
+    grid-row: 1/3;
   }
 }
 .product-buy-wrapper {
@@ -601,7 +602,8 @@
 }
 @media (min-width: 1150px) {
   .product-buy-wrapper {
-    padding-left: 180px;
+    grid-column: 1/3;
+    grid-row: 2/3;
   }
 }
 .advantages-wrapper {
