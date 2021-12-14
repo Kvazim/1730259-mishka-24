@@ -1,3 +1,18 @@
 .reviews-wrapper {
+  position: relative;
   padding: 0 30px 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 80px 50px 47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews-wrapper {
+    padding: 78px 90px 96px 175px;
+  }
 }

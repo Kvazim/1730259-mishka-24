@@ -1,5 +1,9 @@
 .promo {
   background-color: @color-light-grey;
+  background-image: url("../img/hero-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100% auto;
 }
 
 .promo__title {
@@ -9,4 +13,44 @@
   line-height: 30px;
   text-align: center;
   color: @color-black;
+}
+
+.promo__goods {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("../img/hero-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100% auto;
+  }
+
+  .promo__title {
+    padding: 154px 50px 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__goods {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__title {
+    padding: 158px 50px 355px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo {
+    background-image: url("../img/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100% auto;
+  }
 }

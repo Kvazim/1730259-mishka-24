@@ -8,3 +8,26 @@
 .button-slide__switch--prev {
   border-right: none;
 }
+
+@media (min-width: @tablet-width) {
+  .button-slide {
+    position: absolute;
+    width: 175px;
+    justify-content: space-between;
+    margin: 0;
+    right: 50px;
+    bottom: 79px;
+  }
+
+  .button-slide__switch {
+    border: none;
+    background-color: @color-black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-slide {
+    right: 90px;
+    bottom: 122px;
+  }
+}

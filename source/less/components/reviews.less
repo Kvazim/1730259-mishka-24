@@ -15,3 +15,44 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    padding-bottom: 68px;
+    background-image: url("../img/review.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__title {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin-bottom: 38px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__button {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 175px;
+    margin-left: auto;
+    padding: 16px 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__button {
+    top: 80px;
+    right: 0;
+  }
+}

@@ -1,4 +1,18 @@
 .zigzag {
   border-bottom: 6px solid;
-  border-image: url("../../img/zigzag-line-desktop.svg") 6 0;
+  border-image: url("../img/zigzag-line-mobile.svg") 6 0 repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .zigzag {
+    border-bottom: 17px solid;
+    border-image: url("../img/zigzag-line-tablet.svg") 30 0 repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .zigzag {
+    border-bottom: 23px solid;
+    border-image: url("../img/zigzag-line-desktop.svg") 30 0 repeat;
+  }
 }

@@ -14,7 +14,7 @@
       <img src="https://via.placeholder.com/86/35/" width="86" height="35" alt="Логотип магазина, Мишка.">
     </a>
     <!--для открытия убрать класс navigation--closed-->
-    <nav class="navigation navigation--closed">
+    <nav class="navigation navigation--close navigation--nojs">
       <!--В активном состоянии добавить клас toggle--activ-->
       <button class="navigation__toggle toggle" type="button" aria-label="Открыть/скрыть меню.">
         <span class="toggle__bar"></span>
@@ -35,8 +35,8 @@
           </li>
         </ul>
         <ul class="navigation__list user-list">
-          <li class="user-list__item">
-            <a href="#" class="user-list__link">Поиск по сайту</a>
+          <li class="user-list__item user-list__item--search">
+            <a href="#" class="user-list__link user-list__link--search"><span class="search">Поиск по сайту</span></a>
           </li>
           <li class="user-list__item">
             <a href="#" class="user-list__link">Корзина: <span class="basket">пока пусто</span></a>
@@ -50,8 +50,8 @@
     <h1 class="visually-hidden">Интернет магазин, вязанных вещей</h1>
     <section class="promo">
       <div class="promo-wrapper">
-      <h2 class="promo__title">Милые штуки<br> ручной<br> работы для дома</h2>
-    </div>
+      <h2 class="promo__title">Милые штуки ручной<br> работы для дома</h2>
+
       <div class="promo__goods link-goods">
         <div class="link-goods__item link-goods__item--green">
           <a href="#" class="link-goods__link link-goods__link--interior">Предметы<br> интерьера</a>
@@ -60,26 +60,31 @@
           <a href="#" class="link-goods__link link-goods__link--toys">Детские<br> игрушки</a>
         </div>
       </div>
+    </div>
     </section>
     <section class="featured  zigzag">
       <h2 class="visually-hidden">Популярный товар недели</h2>
       <div class="featured__product product">
         <div class="product-text-wrapper">
+          <div class="product__top">
           <h3 class="product__title">Вязаные корзинки</h3>
           <p class="product__subtitle">Товар недели</p>
+        </div>
+        <div class="product__bottom">
+        <div class="product__middle">
           <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
             размерах.</p>
           <table class="product__specification specification">
             <tr class="specification__item">
-              <th>Цвет</th>
-              <td>Тиффани»/серый</td>
+              <th>Цвет:</th>
+              <td>Тиффани/серый</td>
             </tr>
             <tr class="specification__item">
-              <th>Диаметр</th>
+              <th>Диаметр:</th>
               <td>25 см</td>
             </tr>
             <tr class="specification__item">
-              <th>Высота</th>
+              <th>Высота:</th>
               <td>15 см</td>
             </tr>
           </table>
@@ -91,6 +96,8 @@
           <p class="product__text">Цена: <span class="product__price">990 руб.</span></p>
           <button class="button product__button" type="button">Заказать</button>
         </div>
+      </div>
+      </div>
       </div>
     </section>
     <section class="advantages">
@@ -130,8 +137,8 @@
                 <p class="quote__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
                   лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
                   фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <cite class="quote__author--name">Анастасия Красильникова</cite>
-                <address class="quote__author--address">@misssssiskras</address>
+                <cite class="quote__author quote__author--name">Анастасия Красильникова</cite>
+                <address class="quote__author quote__author--address">@misssssiskras</address>
               </div>
             </blockquote>
           </li>
@@ -142,8 +149,8 @@
                   количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                   больше лайков!</p>
-                <cite class="quote__author-name">Екатерина Красильникова</cite>
-                <address class="quote__author--address">@misssssiskras2</address>
+                <cite class="quote__author quote__author-name">Екатерина Красильникова</cite>
+                <address class="quote__author quote__author--address">@misssssiskras2</address>
               </div>
             </blockquote>
           </li>
@@ -154,8 +161,8 @@
                   такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                   больше лайков!</p>
-                <cite class="quote__author-name">Елена Красильникова</cite>
-                <address class="quote__author--address">@misssssiskras3</address>
+                <cite class="quote__author quote__author--name">Елена Красильникова</cite>
+                <address class="quote__author quote__author--address">@misssssiskras3</address>
               </div>
             </blockquote>
           </li>
@@ -168,8 +175,8 @@
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
-        <a href="#" class="button reviews__button">Написать</a>
       </div>
+      <a href="#" class="button reviews__button">Написать</a>
     </div>
     </section>
     <section class="contacts">
@@ -191,14 +198,14 @@
       </ul>
       </div>
       <div class="contacts__map map"></div>
-      <div class="contacts-wrapper">
+      <div class="contacts-wrapper-button">
       <a class="button contacts__button" href="#">Напишите нам</a>
     </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer-wrapper">
-    <img class="page-footer__logo" src="https://via.placeholder.com/102/35/" alt="Логотип интернет магазина, Мишка.">
+    <img class="page-footer__logo" src="https://via.placeholder.com/102/35.svg" alt="Логотип интернет магазина, Мишка.">
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

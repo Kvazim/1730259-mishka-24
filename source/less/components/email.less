@@ -12,6 +12,7 @@
   position: relative;
   text-decoration: none;
   color: @color-light-black;
+  width: 167px;
 }
 
 .email__subtitle::after {
@@ -22,4 +23,25 @@
   left: 0;
   bottom: 0;
   background-color: @color-light-green;
+}
+
+@media (min-width: @tablet-width) {
+  .email {
+    margin-bottom: 30px;
+  }
+
+  .email__subtitle {
+    width: 230px;
+  }
+
+  .email__title,
+  .email__subtitle {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .email__subtitle {
+    width: 210px;
+  }
 }
