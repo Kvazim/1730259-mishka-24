@@ -8,11 +8,23 @@
   margin-bottom: 12px;
 }
 
-.control--checkbox:not(:last-child) {
-  margin-bottom: 23px;
+.control__label--radio,
+.control__label--checkbox {
+  padding-left: 61px;
 }
 
-.control--radio,
-.control--checkbox {
-  padding-left: 61px;
+@media (min-width: @tablet-width) {
+  .control__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .control__label--radio,
+  .control__label--checkbox {
+    padding-left: 78px;
+  }
+
+  .control--radio:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
