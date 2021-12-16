@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   min-width: 320px;
-  height: 100%;
+  min-height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -64,8 +64,6 @@
   }
 }
 .page-header {
-  display: grid;
-  grid-template-columns: 1fr;
   position: relative;
   min-width: 320px;
   max-width: 1050px;
@@ -81,6 +79,8 @@
 }
 @media (min-width: 768px) {
   .page-header {
+    display: grid;
+    grid-template-columns: 1fr;
     height: 89px;
     padding-left: 50px;
     padding-right: 50px;
@@ -136,7 +136,6 @@
   }
   .navigation__legend {
     grid-column: 2/3;
-    grid-row: 2/3;
     justify-self: end;
     padding-top: 21px;
   }
@@ -178,6 +177,8 @@
 }
 @media (min-width: 1150px) {
   .site-list {
+    display: grid;
+    grid-template-columns: 185px 230px;
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -351,8 +352,6 @@
 @media (min-width: 768px) {
   .promo-wrapper {
     position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
   }
   .promo-wrapper::after {
     content: "";
@@ -422,8 +421,8 @@
     padding-bottom: 52px;
   }
   .featured__product {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (min-width: 1150px) {
@@ -445,6 +444,10 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
+}
+.product--zigzag {
+  border-bottom: 6px solid;
+  border-image: url("../img/zigzag-line-mobile.svg") 6 0 repeat;
 }
 .product__top {
   margin-bottom: 17px;
@@ -488,6 +491,10 @@
   border-collapse: collapse;
 }
 @media (min-width: 768px) {
+  .product--zigzag {
+    border-bottom: 17px solid;
+    border-image: url("../img/zigzag-line-tablet.svg") 30 0 repeat;
+  }
   .product__top {
     display: flex;
     justify-content: space-between;
@@ -526,6 +533,10 @@
   }
 }
 @media (min-width: 1150px) {
+  .product--zigzag {
+    border-bottom: 23px solid;
+    border-image: url("../img/zigzag-line-desktop.svg") 30 0 repeat;
+  }
   .product__title {
     font-size: 53px;
     line-height: 57px;
@@ -625,7 +636,8 @@
 }
 @media (min-width: 1150px) {
   .advantages-wrapper {
-    padding-left: 225px;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 }
 .advantages {
@@ -683,36 +695,35 @@
     line-height: 57px;
   }
 }
-.zigzag {
-  border-bottom: 6px solid;
-  border-image: url("../img/zigzag-line-mobile.svg") 6 0 repeat;
-}
-@media (min-width: 768px) {
-  .zigzag {
-    border-bottom: 17px solid;
-    border-image: url("../img/zigzag-line-tablet.svg") 30 0 repeat;
-  }
-}
-@media (min-width: 1150px) {
-  .zigzag {
-    border-bottom: 23px solid;
-    border-image: url("../img/zigzag-line-desktop.svg") 30 0 repeat;
-  }
-}
 .reviews-wrapper {
   position: relative;
   padding: 0 30px 45px;
+}
+.reviews-wrapper--zigzag {
+  border-bottom: 6px solid;
+  border-image: url("../img/zigzag-line-mobile.svg") 6 0 repeat;
 }
 @media (min-width: 768px) {
   .reviews-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     padding: 80px 50px 47px;
+    padding-bottom: 68px;
+    background-image: url("../img/review.jpg");
+    background-repeat: no-repeat;
+  }
+  .reviews-wrapper--zigzag {
+    border-bottom: 17px solid;
+    border-image: url("../img/zigzag-line-tablet.svg") 30 0;
   }
 }
 @media (min-width: 1150px) {
   .reviews-wrapper {
     padding: 78px 90px 96px 175px;
+  }
+  .reviews-wrapper--zigzag {
+    border-bottom: 23px solid;
+    border-image: url("../img/zigzag-line-desktop.svg") 30 0;
   }
 }
 .reviews__title {
@@ -731,11 +742,6 @@
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  .reviews {
-    padding-bottom: 68px;
-    background-image: url("../img/review.jpg");
-    background-repeat: no-repeat;
-  }
   .reviews__title {
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -753,6 +759,8 @@
 }
 @media (min-width: 1150px) {
   .reviews {
+    max-width: 1050px;
+    margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -895,6 +903,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 59px;
     position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
     padding-top: 71px;
     padding-bottom: 105px;
   }
@@ -1044,6 +1054,12 @@
   .page-footer-wrapper {
     flex-direction: row;
     padding: 51px 50px 58px;
+  }
+}
+@media (min-width: 1150px) {
+  .page-footer-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
   }
 }
 .social__list {
