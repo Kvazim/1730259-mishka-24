@@ -3,16 +3,34 @@
   padding: 0 30px 45px;
 }
 
+.reviews-wrapper--zigzag {
+  border-bottom: 6px solid;
+  border-image: url("../img/zigzag-line-mobile.svg") 6 0 repeat;
+}
+
 @media (min-width: @tablet-width) {
   .reviews-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     padding: 80px 50px 47px;
+    padding-bottom: 68px;
+    background-image: url("../img/review.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews-wrapper--zigzag {
+    border-bottom: 17px solid;
+    border-image: url("../img/zigzag-line-tablet.svg") 30 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews-wrapper {
     padding: 78px 90px 96px 175px;
+  }
+
+  .reviews-wrapper--zigzag {
+    border-bottom: 23px solid;
+    border-image: url("../img/zigzag-line-desktop.svg") 30 0;
   }
 }

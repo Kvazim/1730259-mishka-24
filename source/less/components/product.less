@@ -1,3 +1,8 @@
+.product--zigzag {
+  border-bottom: 6px solid;
+  border-image: url("../img/zigzag-line-mobile.svg") 6 0 repeat;
+}
+
 .product__top {
   margin-bottom: 17px;
 }
@@ -48,6 +53,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .product--zigzag {
+    border-bottom: 17px solid;
+    border-image: url("../img/zigzag-line-tablet.svg") 30 0 repeat;
+  }
+
   .product__top {
     display: flex;
     justify-content: space-between;
@@ -93,6 +103,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .product--zigzag {
+    border-bottom: 23px solid;
+    border-image: url("../img/zigzag-line-desktop.svg") 30 0 repeat;
+  }
+
   .product__title {
     font-size: 53px;
     line-height: 57px;
