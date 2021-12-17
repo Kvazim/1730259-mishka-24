@@ -2,6 +2,29 @@
   margin-bottom: 30px;
 }
 
+.catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
 .catalog__item {
   list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    margin-bottom: 53px;
+  }
+
+  .catalog__list {
+    gap: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 52px;
+  }
 }
