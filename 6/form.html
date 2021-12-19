@@ -12,20 +12,19 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="https://via.placeholder.com/86/29/" width="86" height="29"
-        alt="Логотип магазина, Мишка, переход на главную страницу.">
+      <img src="https://via.placeholder.com/86/35/" width="86" height="35" alt="Логотип магазина, Мишка.">
     </a>
     <nav class="navigation navigation--close navigation--nojs">
       <button class="navigation__toggle toggle" type="button" aria-label="Открыть/скрыть меню.">
         <span class="toggle__bar"></span>
       </button>
-      <div class="navigation__wrapper">
+      <div class="navigation-wrapper">
         <ul class="navigation__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--catalog">
             <a href="catalog.html" class="site-list__link">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Вязание на заказ</a>
+            <a href="form.html" class="site-list__link site-list__link--form">Вязание на заказ</a>
           </li>
           <li class="site-list__item main-menu">
             <a href="#" class="main-menu__link">Новые поступления</a>
@@ -56,8 +55,8 @@
       </div>
       <form class="order__form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="order__item fieldset fieldset--radio">
+          <div class="container container--fieldset container--radio">
           <legend class="fieldset__title fieldset__title--radio">Тип</legend>
-          <div class="container container--fieldset">
             <ul class="fieldset__list">
               <li class="fieldset__item control control--radio">
                 <label class="control">
@@ -78,8 +77,8 @@
           </div>
         </fieldset>
         <fieldset class="order__item fieldset fieldset--checkbox">
+          <div class="container container--fieldset container--checkbox">
           <legend class="fieldset__title fieldset__title--checkbox">Цвет</legend>
-          <div class="container container--fieldset">
             <ul class="fieldset__list fieldset__list--checkbox">
               <li class="fieldset__item control control--checkbox">
                 <label class="control">
@@ -129,8 +128,8 @@
           </div>
         </fieldset>
         <fieldset class="order__item fieldset fieldset--name">
+          <div class="container container--fieldset container--name">
           <legend class="fieldset__title fieldset__title--name">ФИО</legend>
-          <div class="container container--fieldset">
             <ul class="fieldset__list fieldset__list--name">
               <li class="fieldset__item fieldset__item--name field">
                 <label class="field__label" for="name">Имя:</label>
