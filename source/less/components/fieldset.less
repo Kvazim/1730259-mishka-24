@@ -65,19 +65,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .fieldset {
-    position: relative;
-  }
-
   .fieldset:nth-child(2n) {
     background-color: @color-grey;
   }
 
   .fieldset__title {
     position: absolute;
-    left: 0;
-    padding-right: 50px;
-    padding-left: 50px;
+    left: 50px;
+    top: 0;
+    padding: 0;
   }
 
   .fieldset__title::after {
@@ -99,7 +95,7 @@
   }
 
   .fieldset__title--checkbox {
-    top: 57px;
+    top: 5px;
   }
 
   .fieldset__list--checkbox {
@@ -108,11 +104,19 @@
   }
 
   .fieldset__title--name {
-    top: 37px;
+    top: 16px;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .fieldset__list {
+    padding-left: 20%;
+  }
+
+  .fieldset__list--contacts {
+    padding-left: 0;
+  }
+
   .fieldset--name {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -144,13 +148,12 @@
 
 @media (min-width: @desktop-width) {
   .fieldset__title {
-    left: 50%;
-    margin-left: -527px;
+    left: 97px;
   }
 
   .fieldset__list {
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 16%;
+    padding-right: 17%;
   }
 
   .fieldset__list--checkbox {
