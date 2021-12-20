@@ -1,6 +1,4 @@
 .page-header {
-  display: grid;
-  grid-template-columns: 1fr;
   position: relative;
   min-width: 320px;
   height: 79px;
@@ -15,13 +13,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     height: 89px;
-    padding-left: 50px;
-    padding-right: 50px;
     box-shadow: none;
     border-bottom: 1px solid fade(@color-black, 10%);
   }

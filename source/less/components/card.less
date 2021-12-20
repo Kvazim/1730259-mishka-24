@@ -1,18 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__link {
+  width: auto;
+}
+
 .card__image {
   display: block;
   min-width: 260px;
   width: 100%;
   min-height: 195px;
   height: auto;
+  object-fit: cover;
 }
 
 .card__info {
-  padding: 27px 28px 32px;
+  width: 100%;
+  padding: 27px 28px 26px;
   border: 1px solid @color-light-grey;
-}
-
-.card__description {
-  font-size: 13px;
+  box-sizing: border-box;
 }
 
 .card__buy {
@@ -47,4 +55,37 @@
   margin: 0;
   padding: 0;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card__image {
+    min-height: 334px;
+  }
+
+  .card__info {
+    padding: 27px 34px 26px;
+  }
+
+  .card__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card__image {
+    min-height: 462px;
+  }
+
+  .card__info {
+    padding-left: 28px;
+    padding-right: 32px;
+  }
 }

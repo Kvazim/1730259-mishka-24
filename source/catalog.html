@@ -11,21 +11,19 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="https://via.placeholder.com/86/29/" width="86" height="29"
-        alt="Логотип магазина, Мишка, переход на главную страницу.">
+      <img src="https://via.placeholder.com/86/35/" width="86" height="35" alt="Логотип магазина, Мишка.">
     </a>
-    <nav class="navigation navigation--closed navigation--nojs">
-      <!--В активном состоянии добавить клас toggle--activ-->
+    <nav class="navigation navigation--close navigation--nojs">
       <button class="navigation__toggle toggle" type="button" aria-label="Открыть/скрыть меню.">
         <span class="toggle__bar"></span>
       </button>
-      <div class="navigation__wrapper">
+      <div class="navigation-wrapper">
         <ul class="navigation__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--catalog">
             <a href="catalog.html" class="site-list__link">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Вязание на заказ</a>
+            <a href="form.html" class="site-list__link site-list__link--form">Вязание на заказ</a>
           </li>
           <li class="site-list__item main-menu">
             <a href="#" class="main-menu__link">Новые поступления</a>
@@ -35,8 +33,8 @@
           </li>
         </ul>
         <ul class="navigation__list user-list">
-          <li class="user-list__item">
-            <a href="#" class="user-list__link">Поиск по сайту</a>
+          <li class="user-list__item user-list__item--search">
+            <a href="#" class="user-list__link user-list__link--search"><span class="search">Поиск по сайту</span></a>
           </li>
           <li class="user-list__item">
             <a href="#" class="user-list__link">Корзина: <span class="basket">пока пусто</span></a>
@@ -57,10 +55,12 @@
               <img class="card__image" src="https://via.placeholder.com/260/195.jpeg" alt="Вязанный зайчик.">
             </a>
             <div class="card__info information">
-              <a href="#" class="information__link">
-                <h3 class="information__title">Зайчик-попрыгайчик</h3>
-              </a>
-              <span class="card__description">Рост 30 см, вес 200 г</span>
+              <div class="information__info">
+                <a href="#" class="information__link">
+                  <h3 class="information__title">Зайчик-попрыгайчик</h3>
+                </a>
+                <span class="information__description">Рост 30 см, вес 200 г</span>
+              </div>
               <div class="card__buy">
                 <b class="card__price">1 200 руб.</b>
                 <button class="button card__button" type="button">
@@ -74,10 +74,12 @@
               <img class="card__image" src="https://via.placeholder.com/260/195.jpeg" alt="Вязанная корзина.">
             </a>
             <div class="card__info information">
+              <div class="information__info">
               <a href="#" class="information__link">
                 <h3 class="information__title">Корзинка для белья</h3>
               </a>
-              <span class="card__description">Диаметр 15 см, высота 10 см</span>
+              <span class="information__description">Диаметр 15 см, высота 10 см</span>
+            </div>
               <div class="card__buy">
                 <b class="card__price">690 руб.</b>
                 <button class="button card__button" type="button">
@@ -91,10 +93,12 @@
               <img class="card__image" src="https://via.placeholder.com/260/195.jpeg" alt="Большая вязанная корзина.">
             </a>
             <div class="card__info information">
+              <div class="information__info">
               <a href="#" class="information__link">
-                <h3 class="information__title">Большая корзинка для игрушек</h3>
+                <h3 class="information__title">Большая корзинка<br> для игрушек</h3>
               </a>
-              <span class="card__description">Диаметр 30 см, высота 30 см</span>
+              <span class="information__description">Диаметр 30 см, высота 30 см</span>
+            </div>
               <div class="card__buy">
                 <b class="card__price">1 500 руб.</b>
                 <button class="button card__button" type="button">
@@ -126,6 +130,7 @@
     </div>
   </main>
   <footer class="page-footer">
+    <div class="page-footer-wrapper">
     <img class="page-footer__logo" src="https://via.placeholder.com/102/35/" alt="Логотип интернет магазина, Мишка.">
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -151,6 +156,7 @@
       <a href="https://htmlacademy.ru/" class="copyright__link"><img class="copyright__image"
           src="https://via.placeholder.com/27/34/" width="86" height="29" alt="Логотип компании htmlacademy."></a>
     </span>
+  </div>
   </footer>
   <div class="modal modal--close">
     <div class="modal-container">

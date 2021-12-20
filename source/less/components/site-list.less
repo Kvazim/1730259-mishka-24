@@ -36,7 +36,27 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
+    display: grid;
+    grid-template-columns: 185px 230px;
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 1/3;
+  }
+
+  .site-list__item {
+    padding-top: 0;
+  }
+
+  .site-list__item--catalog {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .site-list__link {
+    padding: 32px;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  .site-list__link--form {
+    padding-left: 35px;
   }
 }

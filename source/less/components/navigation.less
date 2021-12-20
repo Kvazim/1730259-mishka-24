@@ -10,7 +10,7 @@
     z-index: 1;
   }
 
-  .navigation--close .navigation__wrapper {
+  .navigation--close .navigation-wrapper {
     display: none;
   }
 
@@ -30,7 +30,7 @@
   display: block;
 }
 
-.navigation--nojs .navigation__wrapper {
+.navigation--nojs .navigation-wrapper {
   display: block;
   position: static;
 }
@@ -44,12 +44,13 @@
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    z-index: 5;
   }
 
   .navigation__legend {
     grid-column: 2/3;
-    grid-row: 2/3;
     justify-self: end;
     padding-top: 21px;
+    z-index: 5;
   }
 }

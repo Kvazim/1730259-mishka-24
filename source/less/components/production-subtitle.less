@@ -7,3 +7,26 @@
   line-height: 24px;
   margin-bottom: 40px;
 }
+
+@media (min-width: @tablet-width) {
+  .production-subtitle {
+    padding: 0 40px 33px 46px;
+  }
+
+  .production-subtitle__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production-subtitle {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 80px;
+  }
+
+  .production-subtitle__description {
+    padding-bottom: 51px;
+  }
+}

@@ -38,3 +38,33 @@
 .additionally__input::placeholder {
   opacity: 0.3;
 }
+
+@media (min-width: @tablet-width) {
+  .additionally {
+    display: flex;
+  }
+
+  .additionally__label {
+    width: 68px;
+    margin-top: 20px;
+    margin-right: 97px;
+    padding-bottom: 0;
+    align-items: flex-start;
+  }
+
+  .additionally__label::after {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally {
+    padding-left: 50px;
+    padding-right: 175px;
+    justify-content: space-between;
+  }
+
+  .additionally__label {
+    margin-right: 67px;
+  }
+}
