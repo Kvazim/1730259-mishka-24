@@ -1,7 +1,9 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  min-width: 142px;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 .social__list::after {
@@ -13,4 +15,17 @@
   background-color: @color-darck-grey;
   left: 0;
   bottom: 0;
+}
+
+.social__icon {
+  fill: @color-toggle;
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: @color-link-toy;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
 }
