@@ -1,3 +1,7 @@
+.video__link {
+  display: block;
+}
+
 .video__media {
   display: block;
   width: 100%;
@@ -7,9 +11,29 @@
 
 .video__play {
   position: absolute;
-  width: 100px;
-  height: 77px;
+  width: 102px;
+  height: 78px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: url("../img/svg/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.video__play:hover,
+.video__play:focus {
+  width: 122px;
+  height: 94px;
+}
+
+.video__play:active {
+  width: 82px;
+  height: 63px;
+  opacity: 0.3;
 }
