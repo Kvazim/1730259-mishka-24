@@ -1,8 +1,12 @@
+.fieldset {
+  position: relative;
+}
+
 .fieldset__title {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 30px;
+  padding-left: 30px;
   padding-right: 30px;
   font-weight: 700;
   font-size: 17px;
@@ -85,7 +89,7 @@
   }
 
   .fieldset__title--radio {
-    top: 8px;
+    top: 20px;
   }
 
   .fieldset--radio {
@@ -99,7 +103,7 @@
   }
 
   .fieldset__title--checkbox {
-    top: 5px;
+    top: 70px;
   }
 
   .fieldset__list--checkbox {
@@ -108,7 +112,7 @@
   }
 
   .fieldset__title--name {
-    top: 16px;
+    top: 66px;
   }
 }
 
@@ -152,7 +156,21 @@
 
 @media (min-width: @desktop-width) {
   .fieldset__title {
-    left: 97px;
+    position: relative;
+    justify-content: center;
+    left: -452px;
+  }
+
+  .fieldset__title--radio {
+    top: 38px;
+  }
+
+  .fieldset__title--checkbox {
+    top: 87px;
+  }
+
+  .fieldset__title--name {
+    top: 82px;
   }
 
   .fieldset__list {

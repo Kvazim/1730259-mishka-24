@@ -57,8 +57,28 @@
   border: none;
 }
 
+.card__icon-basket {
+  fill: @color-black;
+  opacity: 0.2;
+}
+
+.card__button:hover,
+.card__button:focus {
+  background-color: transparent;
+}
+
+.card__button:hover .card__icon-basket,
+.card__button:focus .card__icon-basket {
+  opacity: 1;
+  fill: @color-green;
+}
+
+.card__button:active .card__icon-basket {
+  opacity: 0.3;
+}
+
 .card:hover .information,
-.card:focus .information {
+.card:focus-within .information {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
