@@ -1175,6 +1175,7 @@
 }
 .email__subtitle {
   position: relative;
+  align-self: flex-start;
   width: 167px;
   text-decoration: none;
   color: #444444;
@@ -1246,6 +1247,7 @@
     position: absolute;
     left: 174px;
     bottom: 105px;
+    padding: 0;
   }
 }
 .page-footer {
@@ -1278,9 +1280,6 @@
   }
   .page-footer__social {
     margin: 0 auto;
-  }
-  .page-footer__copyright {
-    margin-left: auto;
   }
 }
 .page-footer-wrapper {
@@ -1319,7 +1318,14 @@
   left: 0;
   bottom: 0;
 }
+.social__item:not(:last-child) {
+  margin-right: 40px;
+}
+.social__link {
+  display: block;
+}
 .social__icon {
+  display: block;
   fill: #231f20;
 }
 .social__link:hover .social__icon,
@@ -1330,6 +1336,8 @@
   opacity: 0.3;
 }
 .copyright__text {
+  display: flex;
+  align-self: center;
   margin-right: 27px;
   font-weight: 700;
   font-size: 19px;
@@ -1337,6 +1345,7 @@
   color: #000000;
 }
 .copyright__icon {
+  display: block;
   fill: #63d1bb;
 }
 .copyright__icon:hover,
@@ -1522,6 +1531,9 @@
 .fieldset__item--name:not(:last-child) {
   margin-bottom: 22px;
 }
+.fieldset__item--contacts {
+  position: relative;
+}
 .fieldset__item--contacts:not(:last-child) {
   margin-bottom: 35px;
 }
@@ -1662,6 +1674,12 @@
 }
 .additionally__input::placeholder {
   opacity: 0.3;
+}
+.additionally__input:hover,
+.additionally__input:focus-visible,
+.additionally__input:active {
+  outline: none;
+  border-color: #62d1ba;
 }
 @media (min-width: 768px) {
   .additionally {
@@ -1809,8 +1827,7 @@
   min-width: 260px;
   width: 100%;
   height: 52px;
-  padding: 17px 10px;
-  padding-left: 0;
+  padding: 13px 60px 16px 0;
   border: none;
   background-color: transparent;
   box-shadow: inset 0 -2px 0 0 #000000;
@@ -1819,10 +1836,30 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  color: #444444;
 }
 .field__input::placeholder {
+  color: #000000;
   opacity: 0.3;
+}
+.field__icon {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  fill: #000000;
+  opacity: 0.2;
+}
+.field__input:hover,
+.field__input:focus-visible,
+.field__input:active {
+  outline: none;
+  box-shadow: 0 -2px 0 0 #62d1ba inset;
+}
+.field__input:hover + .field__icon,
+.field__input:focus-visible + .field__icon,
+.field__input:active + .field__icon {
+  opacity: 1;
+  fill: #62d1ba;
 }
 @media (min-width: 768px) {
   .field__label {
@@ -1833,6 +1870,10 @@
   .field__input {
     font-size: 19px;
     line-height: 18px;
+  }
+  .field__icon {
+    top: 13px;
+    right: 22px;
   }
   .field__label--contacts::after {
     display: none;
@@ -1845,6 +1886,9 @@
 @media (min-width: 1150px) {
   .field__label--contacts {
     margin-right: 48px;
+  }
+  .field__icon {
+    right: 0;
   }
 }
 .catalog {
