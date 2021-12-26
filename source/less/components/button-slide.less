@@ -3,10 +3,28 @@
   height: 52px;
   border: 1px solid @color-light-grey;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button-slide__switch--prev {
   border-right: none;
+}
+
+.button-slide__icon {
+  fill: @color-black;
+}
+
+.button-slide__icon--prev {
+  transform: rotate(180deg);
+}
+
+.button-slide__switch:hover svg,
+.button-slide__switch:focus svg {
+  opacity: 0.6;
+}
+
+.button-slide__switch:active svg {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,7 +39,6 @@
 
   .button-slide__switch {
     border: none;
-    background-color: @color-black;
   }
 }
 

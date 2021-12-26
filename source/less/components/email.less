@@ -10,19 +10,22 @@
 
 .email__subtitle {
   position: relative;
+  align-self: flex-start;
+  width: 167px;
   text-decoration: none;
   color: @color-light-black;
-  width: 167px;
+  border-bottom: 1px solid @color-light-green;
 }
 
-.email__subtitle::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 0;
-  background-color: @color-light-green;
+.email__subtitle:hover,
+.email__subtitle:focus {
+  outline: none;
+  color: @color-link-toy;
+  border-color: @color-link-toy;
+}
+
+.email__subtitle:active {
+  border-color: fade(@color-link-toy, 10%);
 }
 
 @media (min-width: @tablet-width) {

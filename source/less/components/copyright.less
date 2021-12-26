@@ -1,7 +1,23 @@
 .copyright__text {
+  display: flex;
+  align-self: center;
   margin-right: 27px;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
   color: @color-black;
+}
+
+.copyright__icon {
+  display: block;
+  fill: @color-green;
+}
+
+.copyright__icon:hover,
+.copyright__icon:focus {
+  fill: @color-link-toy;
+}
+
+.copyright__icon:active {
+  opacity: 0.3;
 }

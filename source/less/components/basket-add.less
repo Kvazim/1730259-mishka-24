@@ -18,11 +18,22 @@
   width: 100%;
   height: 52px;
   margin-top: 31px;
-  border: none;
+  border: 2px solid @color-green;
   background-color: @color-green;
   color: @color-wite;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+  cursor: pointer;
+}
+
+.basket-add__button:hover,
+.basket-add__button:focus {
+  background-color: @color-wite;
+  color: @color-green;
+}
+
+.basket-add__button:active {
+  opacity: 0.3;
 }

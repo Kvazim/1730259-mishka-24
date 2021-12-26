@@ -17,6 +17,7 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-top: 49px;
   list-style-type: none;
 }
@@ -26,6 +27,40 @@
   font-size: 17px;
   line-height: 20px;
   color: @color-black;
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 38px;
+  top: 0;
+  left: 0;
+}
+
+.advantages__item--ecological::before {
+  background: url("../img/svg/flovers.svg") no-repeat;
+}
+
+.advantages__item--style::before {
+  background: url("../img/svg/money.svg") no-repeat;
+}
+
+.advantages__item--up-like::before {
+  background: url("../img/svg/heart.svg") no-repeat;
+}
+
+.advantages__item--manual-whork::before {
+  background: url("../img/svg/klubok.svg") no-repeat;
+}
+
+.advantages__item--self::before {
+  background: url("../img/svg/roket.svg") no-repeat;
+}
+
+.advantages__item--present {
+  background: url("../img/svg/prizent.svg") no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,6 +84,26 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 100px;
     row-gap: 60px;
+  }
+
+  .advantages__item--ecological,
+  .advantages__item--style,
+  .advantages__item--up-like {
+    grid-column: 1/2;
+  }
+
+  .advantages__item--manual-whork,
+  .advantages__item--self,
+  .advantages__item--present {
+    grid-column: 2/3;
+  }
+
+  .advantages__item--manual-whork {
+    grid-row: 1/2;
+  }
+
+  .advantages__item--self {
+    grid-row: 2/3;
   }
 }
 

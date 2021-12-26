@@ -7,13 +7,25 @@
 
 .site-list__link {
   display: block;
-  padding: 28px 30px 26px 76px;
+  margin-left: 30px;
+  padding: 28px 30px 26px 46px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: @color-black;
   text-decoration: none;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  border: none;
+  outline: none;
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @mobile-width-only) {
@@ -23,13 +35,13 @@
   }
 
   .site-list__item {
-    padding-top: 21px;
     box-shadow: none;
   }
 
   .site-list__link {
     width: 167px;
-    padding: 0;
+    margin: 0;
+    padding: 21px 0;
     font-size: 15px;
   }
 }

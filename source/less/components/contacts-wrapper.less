@@ -1,4 +1,5 @@
 .contacts-wrapper {
+  position: relative;
   padding: 0 30px;
 }
 
@@ -6,11 +7,28 @@
   .contacts-wrapper {
     padding: 0 50px;
   }
+
+  .contacts-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 47px;
+    height: 81px;
+    top: 0;
+    right: 50px;
+    background-image: url("../img/svg/flag.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .contacts-wrapper {
     padding-top: 79px;
     padding-left: 174px;
+  }
+
+  .contacts-wrapper::before {
+    top: 62px;
+    left: 110px;
   }
 }
