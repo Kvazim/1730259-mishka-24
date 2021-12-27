@@ -26,13 +26,15 @@
 }
 
 .field__input {
+  display: block;
   min-width: 260px;
   width: 100%;
   height: 52px;
   padding: 13px 60px 16px 0;
   border: none;
+  border-bottom: 2px solid @color-black;
+  outline: none;
   background-color: transparent;
-  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 1);
   box-sizing: border-box;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -57,8 +59,7 @@
 .field__input:hover,
 .field__input:focus-visible,
 .field__input:active {
-  outline: none;
-  box-shadow: 0 -2px 0 0 @color-light-green inset;
+  border-color: @color-light-green;
 }
 
 .field__input:hover + .field__icon,
@@ -76,6 +77,7 @@
   }
 
   .field__input {
+    padding-left: 17px;
     font-size: 19px;
     line-height: 18px;
   }
