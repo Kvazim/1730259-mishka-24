@@ -6,15 +6,17 @@
   list-style-type: none;
 }
 
-.social__list::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: @color-darck-grey;
-  left: 0;
-  bottom: 0;
+@media (max-width: @mobile-width-only) {
+  .social__list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: @color-darck-grey;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .social__item:not(:last-child) {
@@ -23,6 +25,7 @@
 
 .social__link {
   display: block;
+  outline: none;
 }
 
 .social__icon {

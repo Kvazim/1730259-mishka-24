@@ -2,8 +2,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 30px;
-  padding-right: 30px;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -21,18 +19,37 @@
   margin-left: 20px;
 }
 
-.fieldset__list--checkbox {
+.fieldset__title--radio {
+  margin-bottom: 30px;
+}
+
+.fieldset__title--checkbox {
+  margin-bottom: 25px;
+}
+
+.fieldset__title--name {
+  margin-bottom: 28px;
+}
+
+.fieldset__list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 23px;
+}
+
+.fieldset__list--radio {
+  row-gap: 11px;
+}
+
+.fieldset__list--checkbox {
+  row-gap: 23px;
 }
 
 .fieldset__item {
   list-style-type: none;
 }
 
-.fieldset__item--name:not(:last-child) {
-  margin-bottom: 22px;
+.fieldset__list--name {
+  row-gap: 22px;
 }
 
 .fieldset__item--contacts {
@@ -74,18 +91,25 @@
   }
 
   .fieldset__title {
-    position: absolute;
-    left: 50px;
-    top: 0;
-    padding: 0;
+    display: block;
+    max-width: 88px;
+    grid-column: 1/2;
+  }
+
+  .fieldset__title--radio {
+    padding-top: 20px;
+  }
+
+  .fieldset__title--checkbox {
+    padding-top: 20px;
+  }
+
+  .fieldset__title--name {
+    padding-top: 15px;
   }
 
   .fieldset__title::after {
     display: none;
-  }
-
-  .fieldset__title--radio {
-    top: 8px;
   }
 
   .fieldset--radio {
@@ -98,8 +122,8 @@
     padding-bottom: 50px;
   }
 
-  .fieldset__title--checkbox {
-    top: 5px;
+  .fieldset__list {
+    grid-column: 2/3;
   }
 
   .fieldset__list--checkbox {
@@ -107,16 +131,13 @@
     gap: 24px;
   }
 
-  .fieldset__title--name {
-    top: 16px;
+  .fieldset__list--radio,
+  .fieldset__list--checkbox {
+    row-gap: 24px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .fieldset__list {
-    padding-left: 20%;
-  }
-
   .fieldset__list--contacts {
     padding-left: 0;
   }
@@ -152,17 +173,16 @@
 
 @media (min-width: @desktop-width) {
   .fieldset__title {
-    left: 97px;
+    padding-left: 47px;
   }
 
   .fieldset__list {
-    padding-left: 16%;
-    padding-right: 17%;
+    padding-right: 175px;
   }
 
   .fieldset__list--checkbox {
     grid-template-columns: 1fr 1fr 1fr;
-    padding-right: 105px;
+    padding-right: 95px;
   }
 
   .fieldset__list--contacts {
