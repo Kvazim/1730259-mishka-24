@@ -1,8 +1,13 @@
 .promo {
   background-color: @color-promo;
-  background-image: url("../img/hero-mobile@2x.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .promo__title {
@@ -26,6 +31,11 @@
     background-image: url("../img/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .promo::after {
@@ -36,7 +46,7 @@
     height: 24px;
     left: 0;
     bottom: 0;
-    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-image: url("../../img/svg/zigzag-fill-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 0 0;
