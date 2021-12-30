@@ -5,7 +5,7 @@
 
 .reviews-wrapper--zigzag {
   border-bottom: 6px solid;
-  border-image: url("../img/zigzag-line-mobile.svg") 6 0 repeat;
+  border-image: url("../img/svg/zigzag-line-mobile.svg") 6 0 repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,11 +16,16 @@
     padding-bottom: 68px;
     background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews-wrapper--zigzag {
     border-bottom: 17px solid;
-    border-image: url("../img/zigzag-line-tablet.svg") 30 0;
+    border-image: url("../img/svg/zigzag-line-tablet.svg") 30 0;
   }
 }
 
