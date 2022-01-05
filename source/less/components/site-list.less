@@ -8,7 +8,7 @@
 .site-list__link {
   display: block;
   margin-left: 30px;
-  padding: 28px 30px 26px 46px;
+  padding: 29px 30px 26px 46px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -30,6 +30,8 @@
 
 @media (min-width: @mobile-width-only) {
   .site-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-column: 1/2;
     grid-row: 2/3;
   }

@@ -9,7 +9,7 @@
   display: block;
   position: relative;
   margin-left: 30px;
-  padding: 28px 30px 26px 46px;
+  padding: 29px 30px 26px 46px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -26,6 +26,7 @@
 
 .user-list__icon-search {
   position: absolute;
+  display: block;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -33,7 +34,7 @@
 }
 
 .user-list__icon-basket {
-  margin-right: 20px;
+  margin-right: 25px;
   fill: fade(@color-black, 20%);
 }
 
@@ -88,5 +89,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .user-list__icon-basket {
+    margin-right: 30px;
   }
 }

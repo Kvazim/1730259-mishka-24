@@ -6,11 +6,17 @@
 
 .specification__item {
   border-bottom: 1px solid @color-light-grey;
-  height: 39px;
+  height: 40px;
 }
 
 .specification__item th {
   width: 37.6%;
   text-align: start;
   font-weight: inherit;
+}
+
+@media (min-width: @tablet-width) {
+  .specification__item th {
+    width: 33%;
+  }
 }
