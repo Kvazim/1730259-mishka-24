@@ -31,7 +31,7 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    height: 89px;
+    height: 88px;
     box-shadow: none;
     border-bottom: 1px solid fade(@color-black, 10%);
   }
@@ -41,5 +41,11 @@
   .page-header__logo {
     display: block;
     left: 107px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    transform: translate(-50%, -43%);
   }
 }

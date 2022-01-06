@@ -62,7 +62,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .email__title {
+    width: 26%;
+  }
+
   .email__subtitle {
     width: 210px;
+
+    &::after {
+      bottom: -5px;
+      left: 0;
+      width: 98%;
+    }
   }
 }
