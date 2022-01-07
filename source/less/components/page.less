@@ -3,18 +3,29 @@
   text-align: center;
   background-color: @color-grey;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 27px;
   line-height: 30px;
   color: @color-black;
 }
 
 @media (min-width: @tablet-width) {
   .page__title {
-    padding: 101px 50px 63px;
+    position: relative;
+    padding: 101px 50px 84px;
     font-size: 43px;
     line-height: 50px;
-    border-bottom: 24px solid;
-    border-image: url("../img/svg/zigzag-fill-desktop.svg") 35 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      left: 0;
+      bottom: -2px;
+      background-image: url("../img/svg/zigzag-fill-desktop.svg");
+      background-size: auto 95%;
+      background-position: 50% 0;
+    }
   }
 }
 
@@ -23,6 +34,11 @@
     padding: 102px 50px 112px;
     font-size: 53px;
     line-height: 57px;
-    border-bottom: 34px solid;
+
+    &::after {
+      bottom: 0;
+      height: 34px;
+      background-size: auto;
+    }
   }
 }
