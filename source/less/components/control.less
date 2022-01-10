@@ -9,11 +9,11 @@
 }
 
 .control__box--radio {
-  column-gap: 19px;
+  column-gap: 14px;
 }
 
 .control__box--checkbox {
-  column-gap: 23px;
+  column-gap: 15px;
 }
 
 .control__label {
@@ -28,11 +28,12 @@
   display: block;
   position: relative;
   border: 2px solid @color-light-black;
+  box-sizing: border-box;
 }
 
 .control__mark--radio {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -42,10 +43,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: @color-light-green;
+  box-sizing: border-box;
 }
 
 .control__mark--checkbox {
@@ -83,11 +85,11 @@
   }
 
   .control__box--radio {
-    column-gap: 30px;
+    column-gap: 25px;
   }
 
   .control__box--checkbox {
-    column-gap: 23px;
+    column-gap: 30px;
   }
 
   .control__label {
@@ -95,19 +97,34 @@
     line-height: 18px;
   }
 
-  .control__mark {
+  .control__mark--radio {
+    width: 50px;
+    height: 50px;
+  }
+
+  .control__mark--checkbox {
     width: 52px;
     height: 52px;
   }
 
   .control__input[type="radio"]:checked + .control__mark::before {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
   }
 
   .control__input[type="checkbox"]:checked + .control__mark::before {
     width: 32px;
     height: 22px;
     background-image: url("../img/checked-table.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control__label--checkbox {
+    padding-top: 5px;
+  }
+
+  .control__box--radio {
+    column-gap: 28px;
   }
 }
