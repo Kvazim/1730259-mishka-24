@@ -85,8 +85,9 @@
   transform: translate(-52%, -41%);
   z-index: 10;
 }
-.page-header__logo svg {
-  fill: #000000;
+.page-header__logo img {
+  width: 86px;
+  height: 35px;
 }
 .page-header__logo[href]:hover,
 .page-header__logo[href]:focus {
@@ -101,6 +102,10 @@
     box-shadow: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
+  .page-header__logo img {
+    width: 114px;
+    height: 46px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1149px) {
   .page-header__logo {
@@ -111,6 +116,10 @@
 @media (min-width: 1150px) {
   .page-header__logo {
     transform: translate(-50%, -43%);
+  }
+  .page-header__logo img {
+    width: 149px;
+    height: 72px;
   }
 }
 .navigation {
@@ -460,6 +469,7 @@
     line-height: 50px;
   }
   .promo__goods {
+    flex-wrap: nowrap;
     flex-direction: row;
   }
 }
@@ -497,7 +507,7 @@
 .link-goods__link {
   display: block;
   position: relative;
-  padding: 24px 36px 31px 30px;
+  padding: 24px 95px 31px 30px;
   font-family: inherit;
   font-weight: 700;
   font-size: 19px;
@@ -541,7 +551,7 @@
     min-width: 50%;
   }
   .link-goods__link {
-    padding: 26px 36px 42px;
+    padding: 26px 95px 42px 36px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -653,7 +663,7 @@
 }
 .product__specification {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
   border-collapse: collapse;
 }
 @media (min-width: 768px) {
@@ -1185,6 +1195,7 @@
   box-sizing: border-box;
 }
 .contacts__map {
+  display: block;
   min-width: 320px;
   width: 100%;
   height: 455px;
@@ -1248,6 +1259,29 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+.map--nojs iframe {
+  display: none;
+}
+.map picture {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.map--nojs picture {
+  display: block;
+}
+.map__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.map--nojs .map__image {
+  display: block;
+}
+.map__image picture {
+  display: block;
 }
 .email__title,
 .email__subtitle {
@@ -1617,6 +1651,7 @@
     padding-bottom: 50px;
   }
   .order__required {
+    max-width: 400px;
     margin-top: 12px;
     margin-bottom: 0;
     font-size: 17px;
