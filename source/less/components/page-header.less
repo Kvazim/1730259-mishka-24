@@ -16,8 +16,9 @@
   z-index: 10;
 }
 
-.page-header__logo svg {
-  fill: @color-black;
+.page-header__logo img {
+  width: 86px;
+  height: 35px;
 }
 
 .page-header__logo[href]:hover,
@@ -35,6 +36,11 @@
     box-shadow: none;
     border-bottom: 1px solid fade(@color-black, 10%);
   }
+
+  .page-header__logo img {
+    width: 114px;
+    height: 46px;
+  }
 }
 
 @media (min-width: @tablet-width) and (max-width: 1149px) {
@@ -47,5 +53,10 @@
 @media (min-width: @desktop-width) {
   .page-header__logo {
     transform: translate(-50%, -43%);
+  }
+
+  .page-header__logo img {
+    width: 149px;
+    height: 72px;
   }
 }
