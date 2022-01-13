@@ -18,7 +18,7 @@
 
 .card__info {
   width: 100%;
-  padding: 27px 28px 26px;
+  padding: 27px 27px 26px;
   border: 1px solid @color-light-grey;
   box-sizing: border-box;
 }
@@ -28,8 +28,8 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-top: 17px;
-  padding-top: 22px;
+  margin-top: 18px;
+  padding-top: 23px;
 }
 
 .card__buy::before {
@@ -96,11 +96,19 @@
   }
 
   .card__info {
-    padding: 27px 34px 26px;
+    width: 50%;
+    padding: 27px 32px 24px;
+    border-left: none;
   }
 
   .card__price {
     font-size: 17px;
+  }
+
+  .card__buy {
+    margin-top: auto;
+    padding-top: 25px;
+    align-items: flex-start;
   }
 }
 
@@ -114,7 +122,10 @@
   }
 
   .card__info {
+    width: 100%;
+    min-height: 197px;
     padding-left: 28px;
     padding-right: 32px;
+    border: 1px solid @color-light-grey;
   }
 }

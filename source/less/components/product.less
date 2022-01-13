@@ -4,7 +4,7 @@
 }
 
 .product__top {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .product__title {
@@ -23,7 +23,7 @@
 }
 
 .product__description {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   font-size: 15px;
   line-height: 24px;
 }
@@ -31,24 +31,25 @@
 .product__image {
   display: block;
   width: 100%;
-  height: 100%;
   min-height: 315px;
+  height: auto;
   object-fit: cover;
 }
 
 .product__text {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 }
 
 .product__button {
-  padding: 16px 70px;
+  padding: 15px 70px;
 }
 
 .product__specification {
   width: 100%;
+  margin-bottom: 31px;
   border-collapse: collapse;
 }
 
@@ -65,6 +66,7 @@
   }
 
   .product__title {
+    margin: 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -72,12 +74,13 @@
   .product__subtitle {
     width: 100px;
     text-align: center;
-    margin-right: 28px;
+    margin-top: 6px;
+    margin-right: 13px;
     line-height: 17px;
   }
 
   .product__description {
-    padding-right: 17px;
+    margin-bottom: 40px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -86,14 +89,18 @@
 @media (min-width: @tablet-width) {
   .product__bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.88fr 1fr;
     column-gap: 42px;
-    row-gap: 57px;
+    row-gap: 30px;
     position: relative;
   }
 
   .product__middle {
     grid-column: 1/2;
+  }
+
+  .product__image {
+    min-height: 404px;
   }
 
   .product__text {
@@ -108,6 +115,7 @@
   }
 
   .product__title {
+    padding-left: 3px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -117,7 +125,7 @@
     flex-direction: row-reverse;
     grid-column: 1/-1;
     grid-row: 1/2;
-    padding-top: 61px;
+    padding-top: 74px;
     z-index: 5;
     margin-bottom: 0;
   }
@@ -125,7 +133,7 @@
   .product__subtitle {
     margin-left: 32px;
     margin-right: 40px;
-    padding-top: 10px;
+    padding-top: 2px;
     line-height: 17px;
   }
 
@@ -134,17 +142,18 @@
     grid-column: 1/-1;
     grid-row: 1/-1;
     column-gap: 0;
-    row-gap: 109px;
+    row-gap: 87px;
   }
 
   .product__middle {
     grid-column: 2/4;
     grid-row: 1/2;
-    padding-top: 153px;
+    padding-top: 167px;
     margin-right: 58px;
   }
 
   .product__description {
+    margin-bottom: 50px;
     padding-right: 0;
   }
 

@@ -8,7 +8,6 @@
   color: @color-green;
   text-transform: uppercase;
   box-sizing: border-box;
-  word-break: break-word;
 }
 
 .fieldset__title::after {
@@ -25,11 +24,11 @@
 }
 
 .fieldset__title--checkbox {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .fieldset__title--name {
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 }
 
 .fieldset__list {
@@ -38,7 +37,7 @@
 }
 
 .fieldset__list--radio {
-  row-gap: 11px;
+  row-gap: 13px;
 }
 
 .fieldset__list--checkbox {
@@ -50,7 +49,7 @@
 }
 
 .fieldset__list--name {
-  row-gap: 22px;
+  row-gap: 17px;
 }
 
 .fieldset__item--contacts {
@@ -63,12 +62,12 @@
 
 .fieldset--radio {
   padding-top: 30px;
-  padding-bottom: 31px;
+  padding-bottom: 6px;
 }
 
 .fieldset--checkbox {
   padding-top: 25px;
-  padding-bottom: 33px;
+  padding-bottom: 5px;
 }
 
 .fieldset--name {
@@ -77,13 +76,11 @@
 }
 
 .fieldset--contacts {
-  padding-top: 5px;
   padding-bottom: 35px;
 }
 
 .fieldset--additionally {
-  padding-top: 23px;
-  padding-bottom: 17px;
+  padding-bottom: 8px;
 }
 
 @media (min-width: @tablet-width) {
@@ -95,18 +92,19 @@
     display: block;
     max-width: 88px;
     grid-column: 1/2;
+    word-break: break-word;
   }
 
   .fieldset__title--radio {
-    padding-top: 20px;
+    padding-top: 15px;
   }
 
   .fieldset__title--checkbox {
-    padding-top: 20px;
+    padding-top: 17px;
   }
 
   .fieldset__title--name {
-    padding-top: 15px;
+    padding-top: 13px;
   }
 
   .fieldset__title::after {
@@ -127,14 +125,18 @@
     grid-column: 2/3;
   }
 
-  .fieldset__list--checkbox {
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+  .fieldset__list--radio {
+    row-gap: 25px;
   }
 
-  .fieldset__list--radio,
   .fieldset__list--checkbox {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 23px;
     row-gap: 24px;
+  }
+
+  .fieldset__list--name {
+    row-gap: 29px;
   }
 }
 
@@ -144,12 +146,12 @@
   }
 
   .fieldset--name {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 50px;
   }
 
   .fieldset--contacts {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 50px;
   }
 
@@ -158,7 +160,7 @@
   }
 
   .fieldset__item--contacts:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 29px;
   }
 
   .fieldset__item--contacts,
@@ -168,25 +170,47 @@
 
   .fieldset--additionally {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 53px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .fieldset__title {
-    padding-left: 47px;
+    margin-left: 60px;
+    padding-top: 20px;
+  }
+
+  .fieldset--radio {
+    padding-bottom: 49px;
+  }
+
+  .fieldset--checkbox {
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 
   .fieldset__list {
     padding-right: 175px;
   }
 
+  .fieldset__list--radio {
+    row-gap: 27px;
+  }
+
   .fieldset__list--checkbox {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-right: 95px;
+    grid-template-columns: 247px 247px 247px;
+    column-gap: 15px;
+  }
+
+  .fieldset__title--name {
+    padding-top: 15px;
   }
 
   .fieldset__list--contacts {
-    padding-left: 50px;
+    padding-left: 60px;
+  }
+
+  .fieldset--additionally {
+    padding-bottom: 49px;
   }
 }
