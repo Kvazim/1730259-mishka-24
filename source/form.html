@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32.png">
   <link rel="icon" type="image/png" sizes="152x152" href="./img/favicon/favicon-152.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -44,14 +44,14 @@
         <ul class="navigation__list user-list">
           <li class="user-list__item user-list__item--search">
             <a href="#" class="user-list__link user-list__link--search"><span class="search">Поиск по сайту</span>
-              <svg class="user-list__icon-search" width="18" height="18" viewBox="0 0 18 18">
+              <svg class="user-list__icon-search" width="18" height="18" role="img" aria-hidden="true" viewBox="0 0 18 18">
                 <use xlink:href="./img/svg/sprite.svg#icon-search"></use>
               </svg>
             </a>
           </li>
           <li class="user-list__item">
             <a href="#" class="user-list__link user-list__link--basket">
-              <svg class="user-list__icon-basket" width="21" height="18" viewBox="0 0 21 18">
+              <svg class="user-list__icon-basket" width="21" height="18" role="img" aria-hidden="true" viewBox="0 0 21 18">
                 <use xlink:href="./img/svg/sprite.svg#icon-basket"></use>
                 </svg>
               Корзина: <span class="basket">пока пуста</span></a>
@@ -170,16 +170,16 @@
               <li class="fieldset__item fieldset__item--contacts field">
                 <label class="field__label field__label--contacts" for="phone">тел</label>
                 <input class="field__input field__input--contacts" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                <svg class="field__icon field__icon--phone" width="25" height="24" viewBox="0 0 25 24">
+                <svg class="field__icon field__icon--phone" width="25" height="24" role="img" aria-hidden="true" viewBox="0 0 25 24">
                   <use xlink:href="./img/svg/sprite.svg#icon-phone"></use>
                 </svg>
               </li>
               <li class="fieldset__item fieldset__item--contacts field">
                 <label class="field__label field__label--contacts" for="email">E-mail</label>
                 <input class="field__input field__input--contacts" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-                <svg class="field__icon field__icon--email" width="32" height="21" viewBox="0 0 32 21">
+                  <svg class="field__icon field__icon--email" width="32" height="21" role="img" aria-hidden="true" viewBox="0 0 32 21">
                   <use xlink:href="./img/svg/sprite.svg#icon-mail"></use>
-                </svg>
+                  </svg>
               </li>
             </ul>
           </div>
@@ -205,7 +205,7 @@
   <footer class="page-footer">
     <div class="page-footer-wrapper">
     <a class="page-footer__link" href="index.html">
-        <svg class="page-footer__logo" width="102" height="34" viewBox="0 0 102 34" aria-label="Логотип интернет магазина, Мишка. Переход на главную страницу.">
+        <svg class="page-footer__logo" width="102" height="34" role="img" viewBox="0 0 102 34" aria-label="Логотип интернет магазина, Мишка. Переход на главную страницу.">
           <use xlink:href="./img/svg/sprite.svg#logo-footer"></use>
           </svg>
     </a>
@@ -214,7 +214,7 @@
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com/htmlacademy/">
             <span class="visually-hidden">Инстаграмм</span>
-            <svg class="social__icon social__icon--insta" width="22" height="22" viewBox="0 0 22 22">
+            <svg class="social__icon social__icon--insta" width="22" height="22" role="img" aria-hidden="true" viewBox="0 0 22 22">
               <use xlink:href="./img/svg/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
@@ -222,7 +222,7 @@
         <li class="social__item">
           <a class="social__link" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Фейсбук</span>
-            <svg class="social__icon social__icon--facebook" width="15" height="28" viewBox="0 0 15 28">
+            <svg class="social__icon social__icon--facebook" width="15" height="28" role="img" aria-hidden="true" viewBox="0 0 15 28">
               <use xlink:href="./img/svg/sprite.svg#icon-fb"></use>
             </svg>
           </a>
@@ -230,7 +230,7 @@
         <li class="social__item">
           <a class="social__link" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
-            <svg class="social__icon social__icon--twitter" width="23" height="20" viewBox="0 0 23 20">
+            <svg class="social__icon social__icon--twitter" width="23" height="20" role="img" aria-hidden="true" viewBox="0 0 23 20">
               <use xlink:href="./img/svg/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
@@ -240,7 +240,7 @@
     <span class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
       <a href="https://htmlacademy.ru/" class="copyright__link">
-        <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" aria-label="Логотип компании htmlacademy.">
+        <svg class="copyright__icon" width="27" height="35" role="img" viewBox="0 0 27 35" aria-label="Логотип компании htmlacademy.">
           <use xlink:href="./img/svg/sprite.svg#copyright-icon"></use>
         </svg>
         </a>
