@@ -26,10 +26,6 @@
   transform: translateY(-50%);
 }
 
-.navigation--nojs .navigation__list {
-  display: block;
-}
-
 .navigation--nojs .navigation-wrapper {
   display: block;
   position: static;
@@ -40,6 +36,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .navigation--nojs .navigation-wrapper {
+    display: grid;
+  }
+
   .navigation__list {
     display: flex;
     flex-wrap: wrap;
