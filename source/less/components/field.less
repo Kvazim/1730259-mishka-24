@@ -81,6 +81,14 @@
   fill: @color-light-green;
 }
 
+.field__input:disabled {
+  opacity: 0.3;
+}
+
+.field__input--error {
+  border-color: @color-error;
+}
+
 @media (min-width: @tablet-width) {
   .field__label {
     display: flex;
