@@ -170,7 +170,7 @@
               <source media="(min-width: 320px)" type="image/webp" srcset="./img/contents/video-mobile.webp 1x, ./img/contents/video-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="./img/contents/video-tablet.jpg 1x, ./img/contents/video-tablet@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/contents/video-tablet.jpg 1x, ./img/contents/video-tablet@2x.jpg 2x">
-              <img class="video__media" src="./img/contents/video-mobile.jpg" srcset="./img/contents/video-mobile@2x.jpg 2x" alt="Процесс производства.">
+              <img class="video__media" src="./img/contents/video-mobile.jpg" srcset="./img/contents/video-mobile@2x.jpg 2x" loading="lazy" alt="Процесс производства.">
             </picture>
           </a>
           <button class="video__play" type="button" aria-label="Запустить видео"></button>
@@ -221,7 +221,7 @@
     </div>
     <span class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
-      <a href="https://htmlacademy.ru/" class="copyright__link">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <svg class="copyright__icon" width="27" height="35" role="img" viewBox="0 0 27 35" aria-label="Логотип компании htmlacademy.">
           <use xlink:href="./img/svg/sprite.svg#copyright-icon"></use>
         </svg>
@@ -258,6 +258,7 @@
     </div>
   </div>
   <script src="./js/burger.js"></script>
+  <script src="./js/modalcat.js"></script>
 </body>
 
 </html>
