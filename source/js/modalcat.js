@@ -1,10 +1,10 @@
-let btncard = document.querySelectorAll('.card__button');
-let modalClose = document.querySelector('.modal');
-let modalCont = document.querySelector('.modal-container');
+const btncard = document.querySelectorAll('.card__button');
+const modalClose = document.querySelector('.modal');
+const modalCont = document.querySelector('.modal-container');
 
 btncard.forEach(function(cardbtn) {
 
-    btncard.addEventListener('click', function(event) {
+    cardbtn.addEventListener('click', function(event) {
         modalClose.classList.remove('modal--close');
     });
 });
