@@ -2,7 +2,7 @@ let btncard = document.querySelectorAll('.card__button');
 let modalClose = document.querySelector('.modal');
 let modalCont = document.querySelector('.modal-container');
 
-btncard.forEach(function(btncard) {
+btncard.forEach(function(cardbtn) {
 
     btncard.addEventListener('click', function(event) {
         modalClose.classList.remove('modal--close');
