@@ -10,7 +10,7 @@
     z-index: 1;
   }
 
-  .navigation--close .navigation-wrapper {
+  .navigation--close .navigation__wrapper {
     display: none;
   }
 
@@ -26,17 +26,17 @@
   transform: translateY(-50%);
 }
 
-.navigation--nojs .navigation-wrapper {
+.navigation--nojs .navigation__wrapper {
   display: block;
   position: static;
 }
 
-.navigation--nojs .toggle {
+.navigation--nojs .navigation__toggle {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .navigation--nojs .navigation-wrapper {
+  .navigation--nojs .navigation__wrapper {
     display: grid;
   }
 

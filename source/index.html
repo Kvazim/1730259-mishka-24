@@ -13,15 +13,15 @@
   <link rel="apple-touch-icon" href="./img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="./fonts/opensans.woff" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensans.woff" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header page-header--nojs">
 
     <a class="page-header__logo" href="./" aria-current="page">
 
@@ -38,7 +38,7 @@
         <span class="toggle__bar"></span>
       </button>
 
-      <div class="navigation-wrapper">
+      <div class="navigation-wrapper navigation__wrapper">
 
         <ul class="navigation__list site-list">
 
@@ -397,18 +397,18 @@
             <legend class="choice__title">Выберите размер:</legend>
 
             <label class="controls">s
-              <input class="visually-hidden controls-input" type="radio" name="product-size" value="S" checked>
-              <span class="controls-mark"></span>
+              <input class="visually-hidden controls__input" type="radio" name="product-size" value="S" checked>
+              <span class="controls__mark"></span>
             </label>
 
             <label class="controls">m
-              <input class="visually-hidden controls-input" type="radio" name="product-size" value="M">
-              <span class="controls-mark"></span>
+              <input class="visually-hidden controls__input" type="radio" name="product-size" value="M">
+              <span class="controls__mark"></span>
             </label>
 
             <label class="controls">l
-              <input class="visually-hidden controls-input" type="radio" name="product-size" value="L">
-              <span class="controls-mark"></span>
+              <input class="visually-hidden controls__input" type="radio" name="product-size" value="L">
+              <span class="controls__mark"></span>
             </label>
           </fieldset>
 
