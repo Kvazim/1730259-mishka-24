@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1730259-mishka-24/5/">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/86/29/" width="86" height="29"
+        alt="Логотип магазина, Мишка, переход на главную страницу.">
+    </a>
+    <nav class="navigation navigation--closed navigation--nojs">
+      <!--В активном состоянии добавить клас toggle--activ-->
+      <button class="navigation__toggle toggle" type="button" aria-label="Открыть/скрыть меню.">
+        <span class="toggle__bar"></span>
+      </button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item main-menu">
+            <a href="#" class="main-menu__link">Новые поступления</a>
+          </li>
+          <li class="site-list__item main-menu">
+            <a href="#" class="main-menu__link">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="navigation__list user-list">
+          <li class="user-list__item">
+            <a href="#" class="user-list__link">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a href="#" class="user-list__link">Корзина: <span class="basket">пока пусто</span></a>
+          </li>
+        </ul>
+        <p class="navigation__legend">Бесплатная доставка по России</p>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page__title">Вязание на заказ</h1>
+    <section class="order">
+      <h2 class="visually-hidden">Форма заказа</h2>
+      <div class="container">
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+          свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+      <form class="order__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="order__item fieldset fieldset--radio">
+          <legend class="fieldset__title fieldset__title--radio">Тип</legend>
+          <div class="container container--fieldset">
+            <ul class="fieldset__list">
+              <li class="fieldset__item control control--radio">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="product-type" value="accessories"
+                    checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="fieldset__item control control--radio">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="product-type" value="toy">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="order__item fieldset fieldset--checkbox">
+          <legend class="fieldset__title fieldset__title--checkbox">Цвет</legend>
+          <div class="container container--fieldset">
+            <ul class="fieldset__list">
+              <li class="fieldset__item control control--checkbox">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="product-color" value="white"
+                    checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Белый</span>
+                </label>
+              </li>
+              <li class="fieldset__item control control--checkbox">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="product-color" value="grey"
+                    checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Серый</span>
+                </label>
+              </li>
+              <li class="fieldset__item control control--checkbox">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="product-color" value="tiffany">
+                  <span class="control__mark"></span>
+                  <span class="control__label">«Тиффани»</span>
+                </label>
+              </li>
+              <li class="fieldset__item control control--checkbox">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="product-color" value="black">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Черный</span>
+                </label>
+              </li>
+              <li class="fieldset__item control control--checkbox">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="product-color" value="pink">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Розовый</span>
+                </label>
+              </li>
+              <li class="fieldset__item control control--checkbox">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="product-color" value="orange">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="order__item fieldset fieldset--name">
+          <legend class="fieldset__title fieldset__title--name">ФИО</legend>
+          <div class="container container--fieldset">
+            <ul class="fieldset__list fieldset__list--name">
+              <li class="fieldset__item fieldset__item--name field">
+                <label class="field__label" for="name">Имя:</label>
+                <input class="field__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+              </li>
+              <li class="fieldset__item fieldset__item--name field">
+                <label class="field__label" for="famaly">Фамилия:</label>
+                <input class="field__input" type="text" name="famaly" id="famaly" placeholder="Укажите фамилию*"
+                  required>
+              </li>
+              <li class="fieldset__item fieldset__item--name field">
+                <label class="field__label" for="patronymic">Отчество:</label>
+                <input class="field__input" type="text" name="patronymic" id="patronymic"
+                  placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="order__item fieldset fieldset--contacts">
+          <div class="container container--fieldset">
+            <ul class="fieldset__list fieldset__list--contacts">
+              <li class="fieldset__item fieldset__item--contacts field">
+                <label class="field__label field__label--contacts" for="phone">тел</label>
+                <input class="field__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              </li>
+              <li class="fieldset__item fieldset__item--email field">
+                <label class="field__label field__label--contacts" for="email">E-mail</label>
+                <input class="field__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="order__item fieldset fieldset--additionally">
+          <div class="container container--fieldset">
+            <div class="additionally">
+              <label class="additionally__label" for="message">Доп</label>
+              <textarea class="additionally__input" name="message" id="message"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
+        </fieldset>
+        <div class="order__send">
+          <div class="container">
+            <p class="order__required">*Поля обязательны для заполнения</p>
+            <button class="button order__button" type="submit">Отправить заказ</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <img class="page-footer__logo" src="https://via.placeholder.com/102/35/" alt="Логотип интернет магазина, Мишка.">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://www.instagram.com/htmlacademy/">
+            <span class="visually-hidden">Инстаграмм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <span class="page-footer__copyright copyright">
+      <span class="copyright__text">Разработано</span>
+      <a href="https://htmlacademy.ru/" class="copyright__link"><img class="copyright__image"
+          src="https://via.placeholder.com/27/34/" width="86" height="29" alt="Логотип компании htmlacademy."></a>
+    </span>
+  </footer>
+  <script src="./js/burger.js"></script>
+</body>
+
+</html>
